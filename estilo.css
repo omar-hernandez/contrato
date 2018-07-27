@@ -1,0 +1,36 @@
+.negrilla{
+    font-weight: bold;
+}
+
+.contrato{
+    text-align: justify;
+    /* padding: 10px, 20px;
+    width: 100px; */
+}
+
+.encabezado{
+    font-weight: bold;
+}
+
+.declaraciones{
+    margin-bottom: 16px;
+}
+
+.clausulas{
+    margin-bottom: 16px;
+}
+
+.ultimoparr{
+    margin-bottom: 64px;
+}
+
+.firmas{
+    margin-bottom: 64px;
+}
+#cuarta{
+    margin-bottom: 200px
+}
+
+.margen{
+    margin: 10px;
+}

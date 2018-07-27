@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compra venta bien mueble</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+        <div><img src="imagen1.png" alt=""></div>
+    <center>
+        <div class="margen" >introduce:</div>
+        <div class="margen" >ciudad: <input type="text" id="ciudadusuario" required></div>
+        <div class="margen" >pais: <input type="text" id="paisusuario" required></div>
+        <div class="margen" >dia: <input type="text" id="diausuario" required></div>
+        <div class="margen" >mes: <input type="text" id="mesusuario" required></div>
+        <div class="margen" >año: <input type="text" id="añousuario" required></div>
+        <div class="margen" >vendedor: <input type="text" id="vendedor" required></div>
+        <div class="margen" >comprador: <input type="text" id="comprador"></div>
+        <div class="margen" >nacionalidad del vendedor: <input type="text" id="nacionalidadvendedor" required></div>
+        <div class="margen" >venta de un: <input type="text" id="bienmueble" required></div>
+        <div class="margen" >Número de pagos mensuales: <input type="text" id="pagosmensuales" required></div>
+        <div class="margen" >descripcion del bien a vender: <input type="text" id="descripcion" required></div>
+        <div class="margen" >domicilio vendedor: <input type="text" id="domiciliovendedor" required></div>
+        <div class="margen" >domicilio comprador: <input type="text" id="domiciliocomprador" required></div>
+        <div class="margen" >monto a pagar: <input type="text" id="importe" required></div>
+        
+        <div class="margen" ><button onclick="funciona()">Aceptar información</button></div>
+        <a href="#" onclick="HTMLtoPDF()">Download PDF</a>
+
+        <div id="HTMLtoPDF" class="contrato">
+            <div><h1>CONTRATO DE COMPRAVENTA</h1></div>
+            <div><p class="encabezado" id="encabezado"></p></div>
+            <div><h1>DECLARACIONES</h1></div>
+            <div class="declaraciones">I.	Declaran las partes que es su libre voluntad celebrar un contrato de compraventa en los términos de los artículos 2248, 2249, 2255 y demás relacionados del Código Civil Federal de los Estados Unidos Mexicanos.</p></div>
+            <div class="declaraciones">
+                II.	Las partes manifiestan que tienen pleno conocimiento de los alcances, derechos y obligaciones que se deriven de la firma del presente instrumento y que en su total libertad expresan su consentimiento para sujetarse a los términos del mismo. 
+            </p></div>
+            <div class="declaraciones">
+                III.	Declaran ambas partes que no se dedican a ninguna de las actividades a que se refiere el artículo 22 fracción II de la Constitución Política de los Estados Unidos Mexicanos y que sus actividades son de carácter lícito.
+            </p></div>
+            <div class="declaraciones" id="declaracion4"></p></div>
+            <div class="declaraciones" id="declaracion5"></p></div>
+            <div class="declaraciones" id="declaracion6"></p></div>
+            <div class="declaraciones" id="declaracion7"></p></div>
+            <div class="declaraciones">
+                Una vez hechas las anteriores declaraciones, las partes están de acuerdo en acordar las siguientes:
+            </p></div>
+            <div><h1>CLÁUSULAS</h1></div>
+            <div class="clausulas" id="clausula1"></p></div>
+
+            <div class="clausulas" id="clausula2"></p></div>
+
+            <div class="clausulas">
+                <span class="negrilla">TERCERA.</span> El vendedor se compromete a entregar el bien libre de cualquier tipo de gravamen, responsabilizándose al saneamiento en caso de evicción, atendiendo a los artículos 2119 y 2020 del Código Civil Federal de los Estados Unidos Mexicanos, según sea la intención del vendedor.
+            </p></div>
+            <div class="clausulas" id="cuarta">
+                <span class="negrilla">CUARTA.</span> El vendedor responderá por los vicios ocultos o daños irreparables que presente el bien objeto de este instrumento, quedando a decisión del comprador rescindir el contrato o pagar menor precio por el bien adquirido, en base a los artículos 2142 y 2144 del ordenamiento antes citado. El comprador se responsabiliza por cualquier tipo de daño en el bien adquirido que sea ocasionado después de entregado a este. 
+            </p></div>
+            <div class="clausulas">
+                <span class="negrilla">QUINTA.</span> Las partes establecen como domicilio legal para recibir cualquier tipo de notificación y para cualquier cosa relacionada con el cumplimiento y ejecución del presente acuerdo de voluntades, el señalado anteriormente en la sección de las declaraciones.  
+            </p></div>
+            <div class="clausulas" id="clausula6"></p></div>
+
+            <div class="ultimoparr" id="ultimoparrafo"></p></div>
+
+            <div class="firmas" id="firmaVendedor"></p></div>
+
+            <div class="firmas" id="firmaComprador"></p></div>
+        </div>
+    </center>    
+
+
+
+
+    
+
+
+	<script src="js/jspdf.js"></script>
+	<script src="js/jquery-2.1.3.js"></script>
+	<script src="js/pdfFromHTML.js"></script>
+    <script src="action.js"></script>
+</body>
+</html>
